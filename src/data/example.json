@@ -1,0 +1,24 @@
+{
+  "certificates": [
+    {
+      "id": "cert-001",
+      "name": "Backend con Node.js: API Rest con Express.js",
+      "institution": "Pango",
+      "date": "2025-03-14",
+      "type": "Certificación",
+      "tags": ["NodeJS", "BackEnd", "ExpressJS"],
+      "filename": "diploma-backend-nodejs.pdf",
+      "description": "Certificado del curso de Api REST con NodeJS"
+    },
+    {
+      "id": "cert-002",
+      "name": "Introducción al testing con JavaScript",
+      "institution": "ACME Inc",
+      "date": "2025-03-14",
+      "type": "Certificación",
+      "tags": ["Testing", "Jest"],
+      "filename": "diploma-javascript-testing.pdf",
+      "description": "Certificado del curso de introducción al testing con JavaScript"
+    }
+  ]
+}

@@ -22,3 +22,14 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Certificates and Thumbnails folders
+public/certificates/*
+!public/certificates/.gitkeep
+
+public/thumbnails/*
+!public/thumbnails/.gitkeep
+
+# Data
+src/data/*
+!src/data/example.json
