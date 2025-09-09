@@ -1,9 +1,9 @@
 ---
-import type { Certificate } from '../types/certificates'
-import certificatesData from '../data/certificates.json'
-import FilterBar from '../components/FilterBar.astro'
-import CertificateCard from '../components/CertificateCard.astro'
-import NotFound from '../components/NotFound.astro'
+import type { Certificate } from '@/types/certificates'
+import certificatesData from '@/data/certificates.json'
+import FilterBar from '@/components/FilterBar.astro'
+import CertificateCard from '@/components/CertificateCard.astro'
+import NotFound from '@/components/NotFound.astro'
 
 const certificates = certificatesData.certificates as Certificate[]
 const sortedCertificates = certificates.sort((a, b) =>
