@@ -31,13 +31,13 @@ const allInstitutions: string[] = [
     {
       sortedCertificates.map((certificate) => (
         <CertificateCard
-          id={certificate.id}
           name={certificate.name}
           institution={certificate.institution}
           date={certificate.date}
           type={certificate.type}
           tags={certificate.tags}
-          filename={certificate.filename}
+          pdfPath={`certificates/${certificate.filename}.pdf`}
+          imagePath={`/src/assets/${certificate.filename}.webp`}
           description={certificate.description}
         />
       ))

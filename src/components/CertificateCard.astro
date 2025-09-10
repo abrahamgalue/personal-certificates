@@ -1,9 +1,11 @@
 ---
-import type { Certificate, ISODateString } from '@/types/certificates'
+import type { ImageMetadata } from 'astro'
+import type { CertificateCard, ISODateString } from '@/types/certificates'
+import { Image } from 'astro:assets'
 
-interface Props extends Certificate {}
+interface Props extends CertificateCard {}
 
-const { name, institution, date, type, tags, filename, description } =
+const { name, institution, date, type, tags, description, pdfPath, imagePath } =
   Astro.props
 
 const formattedDate = (date: ISODateString) => {
@@ -17,13 +19,18 @@ const formattedDate = (date: ISODateString) => {
   })
 }
 
-const pdfUrl = `/certificates/${filename}`
-const thumbnailUrl = `/thumbnails/${filename.replace('.pdf', '.webp')}`
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/*.{jpeg,jpg,png,gif,webp}'
+)
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+  )
 ---
 
 <a
   class="certificate-card"
-  href={pdfUrl}
+  href={pdfPath}
   target="_blank"
   rel="noopener noreferrer"
   data-tags={tags.join(' ').toLowerCase()}
@@ -34,13 +41,10 @@ const thumbnailUrl = `/thumbnails/${filename.replace('.pdf', '.webp')}`
   aria-label={`Abrir certificado ${name} en una nueva pestaña`}
 >
   <div class="certificate-preview">
-    <img
-      src={thumbnailUrl}
+    <Image
+      src={images[imagePath]()}
       alt={`Vista previa de ${name}`}
       class="preview-image"
-      loading="lazy"
-      width="400"
-      height="300"
     />
     <span class="certificate-type">{type}</span>
   </div>

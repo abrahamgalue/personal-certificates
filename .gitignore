@@ -27,8 +27,8 @@ pnpm-debug.log*
 public/certificates/*
 !public/certificates/.gitkeep
 
-public/thumbnails/*
-!public/thumbnails/.gitkeep
+src/assets/*
+!src/assets/.gitkeep
 
 # Data
 src/data/*
