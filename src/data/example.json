@@ -7,7 +7,7 @@
       "date": "2025-03-14",
       "type": "Certificación",
       "tags": ["NodeJS", "BackEnd", "ExpressJS"],
-      "filename": "diploma-backend-nodejs.pdf",
+      "filename": "diploma-backend-nodejs",
       "description": "Certificado del curso de Api REST con NodeJS"
     },
     {
@@ -17,7 +17,7 @@
       "date": "2025-03-14",
       "type": "Certificación",
       "tags": ["Testing", "Jest"],
-      "filename": "diploma-javascript-testing.pdf",
+      "filename": "diploma-javascript-testing",
       "description": "Certificado del curso de introducción al testing con JavaScript"
     }
   ]
