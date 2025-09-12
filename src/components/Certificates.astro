@@ -3,7 +3,7 @@ import type { Certificate } from '@/types/certificates'
 import certificatesData from '@/data/certificates.json'
 import FilterBar from '@/components/FilterBar.astro'
 import CertificateCard from '@/components/CertificateCard.astro'
-import NotFound from '@/components/NotFound.astro'
+import IconZoomIn from './icons/IconZoomIn.astro'
 
 const certificates = certificatesData.certificates as Certificate[]
 const sortedCertificates = certificates.sort((a, b) =>
@@ -45,7 +45,7 @@ const allInstitutions: string[] = [
   </section>
 
   <div id="noResults" class="no-results" style="display: none;">
-    <NotFound />
+    <IconZoomIn />
     <h3>No se encontraron certificados</h3>
     <p>Intenta ajustar tus filtros o términos de búsqueda</p>
   </div>

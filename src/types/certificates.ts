@@ -18,6 +18,6 @@ export interface CertificateCard extends Omit<Certificate, 'id' | 'filename'> {
   imagePath: string
 }
 
-export type Institution = 'Platzi' | 'Vercel' | string
+export type Institution = string
 
 export type ISODateString = `${number}-${number}-${number}`

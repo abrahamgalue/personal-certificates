@@ -1,4 +1,8 @@
 ---
+import IconSearch from '@/components/icons/IconSearch.astro'
+import IconX from '@/components/icons/IconX.astro'
+import IconTrash from '@/components/icons/IconTrash.astro'
+
 export interface Props {
   allInstitutions: string[]
 }
@@ -9,24 +13,7 @@ const { allInstitutions } = Astro.props
 <div class="filter-container">
   <div class="search-section">
     <div class="search-wrapper">
-      <svg
-        class="search-icon"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="11"
-          cy="11"
-          r="8"
-          stroke="currentColor"
-          stroke-width="2"
-          fill="none"></circle>
-        <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"
-        ></path>
-      </svg>
+      <IconSearch />
       <input
         type="text"
         id="searchInput"
@@ -34,28 +21,7 @@ const { allInstitutions } = Astro.props
         class="search-input"
       />
       <button id="clearSearch" class="clear-search-btn" style="display: none;">
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="18"
-            y1="6"
-            x2="6"
-            y2="18"
-            stroke="currentColor"
-            stroke-width="2"></line>
-          <line
-            x1="6"
-            y1="6"
-            x2="18"
-            y2="18"
-            stroke="currentColor"
-            stroke-width="2"></line>
-        </svg>
+        <IconX />
       </button>
     </div>
   </div>
@@ -89,23 +55,7 @@ const { allInstitutions } = Astro.props
   <div class="results-info">
     <span id="resultsCount">0 certificados encontrados</span>
     <button id="clearAllFilters" class="clear-all-btn">
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M3 6h18" stroke="currentColor" stroke-width="2"></path>
-        <path
-          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
-          stroke="currentColor"
-          stroke-width="2"></path>
-        <path
-          d="M8 6V4c0-1 1-2 2-2h4c0-1 1-2 2-2v2"
-          stroke="currentColor"
-          stroke-width="2"></path>
-      </svg>
+      <IconTrash />
       Limpiar Filtros
     </button>
   </div>
@@ -129,14 +79,6 @@ const { allInstitutions } = Astro.props
     align-items: center;
     display: flex;
     position: relative;
-  }
-
-  .search-icon {
-    color: #64748b;
-    left: 1rem;
-    pointer-events: none;
-    position: absolute;
-    z-index: 2;
   }
 
   .search-input {
