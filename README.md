@@ -1,46 +1,62 @@
-# Astro Starter Kit: Basics
+<div align='center'>
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+# 🚀 Astro: Personal Certificates
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+</div>
 
-## 🚀 Project Structure
+### Página que contiene mis certificados personales.
 
-Inside of your Astro project, you'll see the following folders and files:
+> 🧩 Aquí puedes ver su [**Live Demo**](https://abrahamgalue-certificates.netlify.app/).
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+![vista-previa](public/preview/01-page-preview.jpg)
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+![vista-previa](public/preview/02-page-preview.jpg)
 
-## 🧞 Commands
+![vista-previa](public/preview/03-page-preview.jpg)
 
-All commands are run from the root of the project, from a terminal:
+## 🚀 Descripción
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Este proyecto te permite mostrar tus certificados personales de manera atractiva y organizada. Está construido con **Astro**, un framework moderno para crear sitios web rápidos y optimizados.
 
-## 👀 Want to learn more?
+Puedes agregar tus certificados en formato PDF y personalizar la apariencia del sitio web para que se adapte a tu estilo.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## ⚡ Comenzar
+
+### Prerrequisitos
+
+1. Git.
+2. Node.js 20 o superior.
+3. pnpm (opcional, puedes usar npm o yarn).
+
+## 🔧 Instalación
+
+### Usando pnpm
+
+1. **Clona el repositorio:**
+
+   ```bash
+   git clone https://github.com/abrahamgalue/personal-certificates.git
+   cd personal-certificates
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Inicia el servidor de desarrollo:**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Abre tu navegador y visita:**
+
+   ```bash
+   http://localhost:4321
+   ```
+
+## 🎭 Tecnologías
+
+- [**Astro**](https://astro.build/) Framework para construir sitios web rápidos.
